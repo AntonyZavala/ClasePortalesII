@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 /*Route::get('/', function () {
     return "Hola bienvenido a mi sitio";
@@ -29,6 +29,8 @@ Route::get('/', function () {
     return "Saludos ".$nombre;
 });*/
 
-
+Route::get('/', function () {
+    return "";
+});
 
 
