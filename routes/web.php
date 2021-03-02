@@ -29,8 +29,14 @@ use Illuminate\Support\Facades\Route;
     return "Saludos ".$nombre;
 });*/
 
-Route::get('/', function () {
-    return "";
-});
+Route::get('/Contacto', function () {
+    return "Seccion de contactos";
+})->name('Contactos');
 
+Route :: get('/',function()
+{
+    echo "<a href =". route('Contacto').">Contacto 1</a><br>";
+    echo "<a href = 'Contacto'>Contacto 2</a><br>";
+    echo "<a href = 'Contacto'>Contacto 3</a><br>";
+});
 
