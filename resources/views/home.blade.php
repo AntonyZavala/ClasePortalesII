@@ -14,3 +14,25 @@ $nombre="Antony"
     <h1><?php echo $nombre ?> </h1>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
