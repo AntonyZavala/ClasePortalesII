@@ -1,8 +1,8 @@
 @extends('Plantilla')
 
 @section('Contenido')
-    <h1>Contacto</h1>
+    <h1>Portafolio</h1>
 @endsection
 
-@section('Titulo', 'Contacto')
 
+@section('Titulo', 'Portafolio')

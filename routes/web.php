@@ -40,7 +40,12 @@ Route :: get('/',function()
     echo "<a href = 'Contacto'>Contacto 3</a><br>";
 });*/
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+/*Route::get('/', function () {
+    $nombre="Antony";
+    return view('home')-> with ('nombre', $nombre);
+});*/
 
+Route:: view('/', 'home')->name('home');
+Route:: view('/acercade', 'acercade')->name('acercade');
+Route:: view('/portafolio', 'portafolio')->name('portafolio');
+Route:: view('/Contacto', 'Contacto')->name('Contacto');
