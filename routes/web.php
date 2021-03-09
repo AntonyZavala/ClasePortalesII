@@ -51,7 +51,6 @@ $portafolio=  [
     ['title'=> 'Proyecto #3'],
     ['title'=> 'Proyecto #4'],
 ];
-
 Route:: view('/', 'home')->name('home');
 Route:: view('/acercade', 'acercade')->name('acercade');
 //Route:: get('/portafolio', 'PortController', compact('portafolio'))->name ('portafolio');
