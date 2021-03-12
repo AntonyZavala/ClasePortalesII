@@ -14,9 +14,21 @@ class PortController extends Controller
      */
     /*public function __invoke(Request $request)
     {
+
+
+
+    }
+
+    */
+    public function index()
+    {
+       $portafolio=  [
+            ['title'=> 'Proyecto #1'],
+            ['title'=> 'Proyecto #2'],
+            ['title'=> 'Proyecto #3'],
+            ['title'=> 'Proyecto #4'],
+        ];
         return view('portafolio', compact('portafolio'));
-
-    }*/
-
-    return "Bienvenido a mi portafolio";
+        /*return "Bienvenido a mi portafolio";*/
+    }
 }
