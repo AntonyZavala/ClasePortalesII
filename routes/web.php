@@ -45,6 +45,19 @@ Route :: get('/',function()
     return view('home')-> with ('nombre', $nombre);
 });*/
 
+/*$portafolio=  [
+    ['title'=> 'Proyecto #1'],
+    ['title'=> 'Proyecto #2'],
+    ['title'=> 'Proyecto #3'],
+    ['title'=> 'Proyecto #4'],
+];
+Route:: view('/', 'home')->name('home');
+Route:: view('/acercade', 'acercade')->name('acercade');
+Route:: get('/portafolio', 'PortController')->name ('portafolio');
+Route:: view('/Contacto', 'Contacto')->name('Contacto');*/
+
+
+
 $portafolio=  [
     ['title'=> 'Proyecto #1'],
     ['title'=> 'Proyecto #2'],
@@ -54,7 +67,5 @@ $portafolio=  [
 Route:: view('/', 'home')->name('home');
 Route:: view('/acercade', 'acercade')->name('acercade');
 //Route:: get('/portafolio', 'PortController', compact('portafolio'))->name ('portafolio');
-
 Route:: get('/portafolio', 'PortController')->name ('portafolio');
-
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
