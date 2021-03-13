@@ -70,3 +70,5 @@ Route:: get('/portafolio', 'EjempploController', compact('portafolio'))->name ('
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
 Route:: post('Contacto', ('messcontroller@sstore'))->name('Contac');
+
+/*Antony Zavala*/

@@ -7,7 +7,7 @@
     <title>@yield('Titulo')</title>
 </head>
 <body>
-    
+
     <nav>
     <ul>
         <li><a href="/">home</a></li>
@@ -19,3 +19,4 @@
 @yield('Contenido')
 </body>
 </html>
+{!!/*Antony Zavala*/!!}
