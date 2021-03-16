@@ -3,16 +3,18 @@
 @section('Contenido')
     <h1>Contacto</h1>
 
-{!!/*@if($condition->any())
-@foreach ($errors->all() as $error)
-    <p>{{$error}}</p>
-@endforeach
-    mostrar error*/!!}
+    {!!/*@if($condition->any())
+        @foreach ($errors->all() as $error)
+            <p>{{$error}}</p>
+        @endforeach
+            mostrar error*/!!}
+
+
 
 
 <form method="post" action={{ route('Contact') }}>
     @csrf
-    <input name="fullname" placeholder="Nombre completo" value='{{old('nombre')}}'><br>
+    <input name="fullname" placeholder="Nombre completo" value='{{old('fullname')}}'><br>
     {!!$errors->first('fullname','<small>:message</small><br>')!!}
 
     <input type="email" name="email" placeholder="Email" value='{{old('email')}}'><br>
@@ -29,4 +31,3 @@
 </form>
 @endsection
 
-{!!/*Antony Zavala*/!!}

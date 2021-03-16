@@ -19,4 +19,4 @@
 @yield('Contenido')
 </body>
 </html>
-{!!/*Antony Zavala*/!!}
+

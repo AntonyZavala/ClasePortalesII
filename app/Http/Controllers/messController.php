@@ -36,6 +36,7 @@ public function store()
     ]);
 
     Mail:: to('antonyzavala244@gmai.com')->send( new mensajerecibido);
+    return 'Mensaje enviado'
 }
 
 //Antony Zavala
