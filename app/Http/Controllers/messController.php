@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class messController extends Controller
 {
@@ -33,6 +34,8 @@ public function store()
         'subject'=>'required',
         'contenido'=>'required'
     ]);
+
+    Mail:: to('antonyzavala244@gmai.com')->send( new mensajerecibido);
 }
 
 //Antony Zavala
