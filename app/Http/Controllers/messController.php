@@ -28,16 +28,17 @@ class messController extends Controller
 
 public function store()
 {
-    request()->validate([
+    $msj= request()->validate([
         'fullname'=>'required',
         'email'=>'required',
         'subject'=>'required',
         'contenido'=>'required'
     ]);
 
-    Mail:: to('antonyzavala244@gmai.com')->send( new mensajerecibido);
-    return 'Mensaje enviado'
+    Mail:: to('antonyzavala244@gmail.com')->send( new mensajerecibido($msj));
+    return 'Mensaje enviado';
 }
+
 
 //Antony Zavala
 
