@@ -69,6 +69,6 @@ Route:: view('/acercade', 'acercade')->name('acercade');
 Route:: get('/portafolio', 'EjemploController', compact('portafolio'))->name ('portafolio');
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
-Route:: post('Contacto', ('messcontroller@sstore'))->name('Contac');
+Route:: post('Contacto', ('messController@store'))->name('Contac');
 
 /*Antony Zavala*/

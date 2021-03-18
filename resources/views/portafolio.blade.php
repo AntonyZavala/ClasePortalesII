@@ -1,16 +1,16 @@
-@extends('Plantilla')
+@extends('plantilla')
+
 
 @section('Contenido')
-    <h1>Portafolio</h1>
-    <ul>
-    @foreach($portafolio as $portafolioItem)
-    {{$portafolioItem['titlte']}}
+<h1> Portafolio</h1>
+<ul>
+    @foreach ($portafolio as $portafolioItem)
+    <li>{{$portafolioItem['title']}}</li>
 
     @endforeach
-    </ul>
+</ul>
+
 @endsection
 
-
-@section('Titulo', 'Portafolio')
-
+@section('titulo', 'Portafolio')
 

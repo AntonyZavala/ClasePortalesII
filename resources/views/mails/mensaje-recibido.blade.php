@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-   Contenido del mensaje
+
+    <p>Recibiste un mensaje de: {{$msg['nombre']}}-{{$msg['email']}} </p>
+    <p> <strong> Asunto: {{$msg['subject']}} </strong> </p>
+    <p> <strong> Contenido: {{$msg['contenido']}} </strong> </p>
+
 </body>
 </html>
