@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
+
 class PortController extends Controller
 {
     /**
@@ -22,7 +24,7 @@ class PortController extends Controller
     */
     public function index()
     {
-       $portafolio=  [
+       /*$portafolio=  [
             ['title'=> 'Proyecto #1'],
             ['title'=> 'Proyecto #2'],
             ['title'=> 'Proyecto #3'],
@@ -30,6 +32,9 @@ class PortController extends Controller
         ];
         return view('portafolio', compact('portafolio'));
         /*return "Bienvenido a mi portafolio";*/
+
+        $portafolio= DB::table('project')->get();
+        return view('portafolio', compact('portafolio'));
     }
 }
 //Antony Zavala

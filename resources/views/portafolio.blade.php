@@ -6,7 +6,7 @@
 <ul>
     @foreach ($portafolio as $portafolioItem)
     <li>{{$portafolioItem['title']}}</li>
-
+    <li>{{$portafolioItem->title}}{{$portafolioItem->description}}{{$portafolioItem->create_at}}</li>
     @endforeach
 </ul>
 
