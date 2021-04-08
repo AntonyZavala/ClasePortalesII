@@ -66,6 +66,14 @@ $portafolio=  [
 ];
 Route:: view('/', 'home')->name('home');
 Route:: view('/acercade', 'acercade')->name('acercade');
+Route:: get('/portafolio', 'portcontroller@index')->name ('portafolio');
+
+Route::get('/Portafolio/crear','PotfolioController@create')->name('portafolio.create');
+
+Route::post('/Portafolio', 'PotfolioController@store')->name('Portafolio.store');
+
+Route:: get('/portafolio/{project}', 'portcontroller@show')->name ('portafolio');
+
 Route:: get('/portafolio', 'EjemploController', compact('portafolio'))->name ('portafolio');
 Route:: view('/Contacto', 'Contacto')->name('Contacto');
 
