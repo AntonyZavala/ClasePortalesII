@@ -15,14 +15,20 @@ class PortController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    /*public function __invoke(Request $request)
+
+    public function create()
     {
-
-
-
+        return view ('Project.create');
     }
+    public function store(Request $request)
+    {
+        Project::created([
+            'title'=>
+        ])
 
-    */
+
+        return request();
+    }
     public function index()
     {
        /*$portafolio=  [
@@ -41,7 +47,11 @@ class PortController extends Controller
 
     public function show($id)
     {
-
+        return view('Project.show', [
+            'project'=> Project:: findorfail($id)
+        ]);
     }
+
+
 }
 //Antony Zavala
