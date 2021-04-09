@@ -22,9 +22,10 @@ class PortController extends Controller
     }
     public function store(Request $request)
     {
-        Project::created([
-            'title'=>
-        ])
+        Project::create([
+            'title'=>request('title'),
+            'description'=>request('description'),
+        ]);
 
 
         return request();
