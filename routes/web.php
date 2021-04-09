@@ -68,9 +68,9 @@ Route:: view('/', 'home')->name('home');
 Route:: view('/acercade', 'acercade')->name('acercade');
 Route:: get('/portafolio', 'portcontroller@index')->name ('portafolio');
 
-Route::get('/Portafolio/crear','PotfolioController@create')->name('portafolio.create');
+Route::get('/Portafolio/crear','portcontroller@create')->name('portafolio.create');
 
-Route::post('/Portafolio', 'PotfolioController@store')->name('Portafolio.store');
+Route::post('/Portafolio', 'portcontroller@store')->name('Portafolio.store');
 
 Route:: get('/portafolio/{project}', 'portcontroller@show')->name ('portafolio');
 
