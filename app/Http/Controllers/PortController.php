@@ -46,13 +46,19 @@ class PortController extends Controller
         return view('portafolio', compact('portafolio'));
     }
 
-    public function show($id)
+    /*public function show($id)
     {
         return view('Project.show', [
             'project'=> Project:: findorfail($id)
         ]);
-    }
+    }*/
 
+    public function show(Project $Project)
+    {
+        return view('Project.show', [
+            'project'=> $Project
+        ]);
+    }
 
 }
 //Antony Zavala
